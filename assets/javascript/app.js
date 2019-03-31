@@ -53,7 +53,11 @@ $(document.body).on('click', '.search-button', function () {
                 .attr('data-animate', response.data[i].images.fixed_height.url)
                 .addClass('gif');
 
-            gifDiv.append(gif);
+            //show rating
+            var rating = $('<div>')
+                .text('Rating: ' + response.data[i].rating);
+
+            gifDiv.append(gif).append(rating);
             $('#gifs').append(gifDiv);
         }
     })
