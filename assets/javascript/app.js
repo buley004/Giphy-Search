@@ -1,6 +1,9 @@
 var apiKey = 'y6ZZz4VNItJ3M4N6GGrssLCjD0Crt4Ny';
 var queryUrl = 'https://api.giphy.com/v1/gifs/trending?limit=10&api_key=' + apiKey;
-var topics = ['sounders', 'timbers'];
+var topics = ['Atlanta United', 'Chicago Fire', 'FC Cincinnati', 'Colorado Rapids', 'Columbus Crew', 'FC Dallas', 'DC United',
+    'Houston Dynamo', 'LAFC', 'LA Galaxy', 'Minnesota United', 'Montreal Impact', 'New England Revolution', 'NYCFC', 'New York Red Bulls',
+    'Orlando City', 'Philadelphia Union', 'Real Salt Lake', 'San Jose Earthquakes', 'Seattle Sounders',
+    'Sporting KC', 'Toronto FC', 'Vancouver Whitecaps'];
 var searchLimit = 10;
 
 //load buttons for each search term in topics array
