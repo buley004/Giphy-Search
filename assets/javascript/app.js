@@ -8,6 +8,9 @@ var searchLimit = 10;
 
 //load buttons for each search term in topics array
 function loadButtons() {
+    //empty button div before loading
+    $('#buttons-view').empty();
+    
     for (let i = 0; i < topics.length; i++) {
         var newButton = $('<button>')
             .text(topics[i])
@@ -76,3 +79,21 @@ $(document.body).on('click', '.gif', function () {
     }
 
 });
+
+//add new search button
+$('#add-team').on('click', function(event){
+    //prevent page from reloading
+    event.preventDefault();
+
+    //get input from text box
+    var team = $('#team-input').val().trim();
+
+    //clear text box
+    $('#team-input').val('');
+
+    //add team to topics array
+    topics.push(team);
+
+    //load buttons with new team
+    loadButtons();
+})
