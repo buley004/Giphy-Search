@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'sports';
+    src: url(../fonts/collegiateHeavyOutline\ Medium.ttf)
+}
+
+body {
+    background-color: black; 
+}
+
+h1 {
+    text-align: center;
+    background-color: white;
+    font-family: sports; 
+}
+
+.container {
+    max-width: 960px;
+}
+
+.row {
+    padding-bottom: 20px;
+}
+
+.search-button {
+    margin: 5px;
+
+}

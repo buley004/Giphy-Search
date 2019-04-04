@@ -6,24 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Giphy Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <!-- Rendered Buttons will get Dumped Here  -->
-    <div id="buttons-view"></div>
 
-    <form id="team-form">
-        <label for="team-input">Add new button</label>
-        <input type="text" id="team-input">
-        <br>
+    <div id="header justify-content-center"><h1>MLS Giphy Search</h1></div>
+    
+    <div class="container">
 
-        <!-- Button triggers new team to be added -->
-        <input id="add-team" type="submit" value="Add a New Team!">
-    </form>
+        <div class="row justify-content-center">
+            <!-- Form to add new button -->
+            <form class="form-inline" id="team-form">
+                <!-- <label for="team-input">Add new button</label> -->
+                <input type="text" id="team-input">
+                <br>
 
-    <!-- gifs will display here -->
-    <div id="gifs"></div>
+                <!-- Button triggers new team to be added -->
+                <input id="add-team" type="submit" value="Add a New Team!">
+            </form>
+        </div>
 
+        <!-- Rendered Buttons will get Dumped Here  -->
+        <div id="buttons-view"></div>
+
+        <!-- gifs will display here -->
+        <div id="gifs"></div>
+
+    </div>
 
     <!-- link to javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
