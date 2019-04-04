@@ -45,7 +45,7 @@ $(document.body).on('click', '.search-button', function () {
 
         //create div for each image and add to gifs div
         for (let i = 0; i < response.data.length; i++) {
-            var gifDiv = $('<span>');
+            var gifDiv = $('<div>').addClass('gifDiv');
             var gif = $('<img>')
                 .attr('src', response.data[i].images.fixed_height_still.url)
                 .attr('data-state', 'still')
@@ -55,9 +55,10 @@ $(document.body).on('click', '.search-button', function () {
 
             //show rating
             var rating = $('<div>')
-                .text('Rating: ' + response.data[i].rating);
+                .text('Rating: ' + response.data[i].rating)
+                .addClass('rating');
 
-            gifDiv.append(gif).append(rating);
+            gifDiv.append(rating).append(gif);
             $('#gifs').append(gifDiv);
         }
     })

@@ -4,13 +4,16 @@
 }
 
 body {
-    background-color: black; 
+    background-color: #182954; 
 }
 
 h1 {
     text-align: center;
-    background-color: white;
+    background-color:#E7222F;
     font-family: sports; 
+    color: white;
+    font-size: 50px;
+    padding: 10px;
 }
 
 .container {
@@ -19,9 +22,17 @@ h1 {
 
 .row {
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .search-button {
     margin: 5px;
+}
 
+.rating {
+    color: white;
+}
+
+.gifDiv {
+    margin-top: 10px;
 }
